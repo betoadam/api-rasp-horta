@@ -8,7 +8,7 @@ const schema = new Schema({
     type: String,
     required: true
   },
-  controlador: {
+  mac: {
     type: String,
     required: true,
   },
@@ -28,7 +28,7 @@ const schema = new Schema({
   }],
   data: {
     type: Date,
-    required:true
+    required:false
   }
 
 });

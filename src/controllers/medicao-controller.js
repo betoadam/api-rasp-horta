@@ -28,16 +28,16 @@ exports.post = async(req, res, next) => {
     try {
         let medicao = {
             codigoSensor: req.body.codigoSensor,
-            controlador: req.body.controlador,
+            mac: req.body.mac,
             tipo: req.body.tipo,
             medicao: req.body.medicao,
-            data: req.body.data
+            data: new Date()
         };
         let retorno = await repository.create(medicao);
         console.log(retorno);
         
         res.status(201).send({
-            message: 'Medicao cadastrado com sucessod!',
+            message: 'Medicao cadastrado com sucessoo!',
             resposta: retorno
         });
     } catch (e) {

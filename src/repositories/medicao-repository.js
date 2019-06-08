@@ -21,7 +21,7 @@ exports.update = async(data) => {
         }, {
             $set: {
                 codigoSensor: data.codigoSensor,
-                controlador: data.controlador,
+                mac: data.mac,
                 tipo: data.tipo,
                 medicao: data.medicao,
                 data:data.data
